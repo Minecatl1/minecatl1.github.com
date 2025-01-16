@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main sites</title>
+    <style>
+        body {
+            background-color: #f0f0f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #4B0082;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #6A5ACD;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #9370DB;
+        }
+    </style>
+    <script>
+        function modifyURL(suffix) {
+            var currentURL = window.location.href;
+            var newURL = currentURL + suffix;
+            window.location.href = newURL;
+        }
+    </script>
+</head>
+<body>
+    <h1>URL Modifier</h1>
+    <button class="button" onclick="modifyURL('/os')">selene</button>
+    <button class="button" onclick="modifyURL('/GL')">Game Loader</button>
+    <button class="button" onclick="modifyURL('/MP')">Music Player</button>
+</body>
+</html>
