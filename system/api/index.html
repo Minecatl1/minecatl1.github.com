@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main sites</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+input[type="file"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+select, input {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #6a11cb;
+    background: -webkit-linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+button:hover {
+    background-color: #5a10bb;
+}
+
+li {
+    padding: 5px;
+    color: #333;
+}
+    </style>
+    <script>
+        function modifyURL(suffix) {
+            var currentURL = window.location.href;
+            var newURL = currentURL + suffix;
+            window.location.href = newURL;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sites</h1>
+    <button class="button" onclick="modifyURL('os')">Selene</button>
+    <button class="button" onclick="modifyURL('GL')">Game Loader</button>
+    <button class="button" onclick="modifyURL('MP')">Music Player</button>
+    <button class="button" onclick="modifyURL('GH')">Game Hub</button>
+    <button class="button" onclick="modifyURL('RG')">Radon Games</button>
+    <button class="button" onclick="modifyURL('nw')">Nettle Web</button>
+    <button class="button" onclick="modifyURL('OUR')">Obsidians</button>
+    <button class="button" onclick="modifyURL('cloak.html')">cloak</button>
+</body>
+</html>
